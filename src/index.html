@@ -13,7 +13,7 @@
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
       onsubmit="onSubmit()">
-      <fieldset class="group">
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
         <div class="data">
           <label for="surname">Surname:</label>
@@ -21,7 +21,8 @@
             type="text"
             name="surname"
             id="surname"
-            autocomplete="off">
+            autocomplete="off"
+            >
         </div>
 
         <div class="data">
@@ -30,7 +31,8 @@
             type="text"
             name="name"
             id="name"
-            autocomplete="off">
+            autocomplete="off"
+            >
         </div>
 
         <div class="data">
@@ -42,7 +44,8 @@
             id="age"
             value="12"
             min="12"
-            max="110">
+            max="110"
+            >
         </div>
 
         <div class="data">
@@ -50,7 +53,8 @@
           <input
             type="date"
             name="date"
-            id="date">
+            id="date"
+            >
         </div>
 
         <div class="data">
@@ -58,11 +62,12 @@
           <input
             type="checkbox"
             name="term"
-            id="terms">
+            id="terms"
+            >
         </div>
       </fieldset>
 
-      <fieldset class="group">
+      <fieldset class="fieldset">
         <legend>Registration</legend>
         <div class="data">
           <label for="email">E-mail:</label>
@@ -71,7 +76,8 @@
             name="email"
             id="email"
             placeholder="email@example.com."
-            required autocomplete="off">
+            required autocomplete="off"
+            >
         </div>
 
         <div class="data">
@@ -82,25 +88,28 @@
             id="password"
             minlength="8"
             maxlength="15"
-            autocomplete="off">
+            autocomplete="off"
+            >
         </div>
       </fieldset>
 
-      <fieldset class="group">
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
         <div class="data"> Do you love cats?
           <label for="yes">Yes</label>
           <input
             type="radio"
             id="yes"
-            name="choice"
-            value="yes">
+            name="love-cats"
+            value="yes"
+            >
           <label for="no">No</label>
           <input
             type="radio"
-            name="choice"
+            name="hate-cats"
             id="no"
-            value="no">
+            value="no"
+            >
         </div>
 
         <div class="data">
@@ -108,7 +117,8 @@
           <input
             type="color"
             name="color"
-            id="color">
+            id="color"
+            >
         </div>
 
         <div class="data">
@@ -116,7 +126,8 @@
           <input
             type="time"
             name="time"
-            id="bed">
+            id="bed"
+            >
         </div>
 
         <div class="data">
@@ -136,11 +147,12 @@
             min="1"
             max="10"
             value="1"
-            id="rate">
+            id="rate"
+            >
         </div>
       </fieldset>
 
-      <fieldset class="group">
+      <fieldset class="fieldset">
         <legend>Additional info</legend>
         <div class="data">
           <label for="comments">Comments:</label>
@@ -148,10 +160,10 @@
         </div>
 
         <div class="data">
-          <label for="recc">Would you recommend us?</label>
-          <select name="recommend" id="recc">
-            <option value="recc-yes">yes</option>
-            <option value="recc-no">no</option>
+          <label for="recommend">Would you recommend us?</label>
+          <select name="recommend" id="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </div>
       </fieldset>
